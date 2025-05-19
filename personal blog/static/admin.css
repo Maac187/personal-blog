@@ -1,0 +1,173 @@
+/* Contenedor del formulario de nuevo artículo */
+#container {
+    max-width: 600px;
+    margin: 40px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0001;
+    padding: 40px 30px;
+}
+
+/* Título del formulario */
+#header {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Etiquetas y campos del formulario */
+form h1 {
+    font-size: 1.1em;
+    margin: 20px 0 8px 0;
+    color: #333;
+}
+
+input[type="text"], textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 1em;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+    background: #f9f9f9;
+    transition: border 0.2s;
+}
+
+input[type="text"]:focus, textarea:focus {
+    border: 1.5px solid #4caf50;
+    outline: none;
+    background: #fff;
+}
+
+/* Botón de enviar */
+#submit {
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 28px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 10px;
+}
+
+#submit:hover {
+    background: #388e3c;
+}
+
+/* Mensajes de error y éxito */
+h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 1.1em;
+}
+
+h2:has(+ h2) {
+    color: #4caf50;
+}
+
+/* Estilo para cada artículo */
+.article-block {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0001;
+    margin: 20px 0;
+    padding: 20px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Título del artículo */
+#articles {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin: 0;
+    flex: 1;
+}
+
+/* Botones edit y delete */
+#edit_button, #delete_button {
+    padding: 8px 18px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s, color 0.2s;
+}
+
+#edit_button {
+    background: #4caf50;
+    color: #fff;
+}
+
+#edit_button:hover {
+    background: #388e3c;
+}
+
+#delete_button {
+    background: #f44336;
+    color: #fff;
+}
+
+#delete_button:hover {
+    background: #b71c1c;
+}
+
+/* Contenedor del login */
+#login-container {
+    max-width: 400px;
+    margin: 60px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0001;
+    padding: 40px 30px;
+}
+
+/* Título del login */
+#login-header {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 30px;
+}
+
+/* Campos del login */
+#login-form input[type="text"],
+#login-form input[type="password"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
+    font-size: 1em;
+    margin-bottom: 18px;
+    box-sizing: border-box;
+    background: #f9f9f9;
+    transition: border 0.2s;
+}
+
+#login-form input[type="text"]:focus,
+#login-form input[type="password"]:focus {
+    border: 1.5px solid #4caf50;
+    outline: none;
+    background: #fff;
+}
+
+/* Botón de login */
+#login-submit {
+    background: #4caf50;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px 28px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 10px;
+}
+
+#login-submit:hover {
+    background: #388e3c;
+}

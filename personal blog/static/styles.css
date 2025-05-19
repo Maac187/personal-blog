@@ -1,0 +1,110 @@
+#container{
+    width: 60%;
+    height: 100%;
+    position: relative;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #e3e4e4be;
+    
+
+}
+
+h1{
+    text-align: center;
+    font-size: 250%;
+    margin-left: 5%;
+  
+}
+
+
+body{
+    background-color: #ffffff;
+  
+}
+
+button {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    margin: 10px 0; /* Espaciado vertical entre botones */
+    background-color: #f8f9f9;
+    border: none;
+    padding: 10px; /* Espaciado interno */
+    text-align: left; /* Alinea el texto a la izquierda */
+    font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    display: block; /* Asegura que los botones se apilen verticalmente */
+    position: relative; /* Elimina el posicionamiento absoluto */
+}
+button:hover{
+    background-color: #d8dada;
+    border-color: #f0f0f0; 
+    width: 100%;
+    height: 10%;
+}
+.div{
+    width: 100%;
+    height:100%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: #f8f9f9;
+
+}
+
+.titles{
+    font-size: 150%;
+    margin-left: 5%;
+    text-align: left;
+    width: 50%;
+    margin: 5%;
+
+}
+
+.dates{
+    font-size: 150%;
+    margin-left: 5%;
+    text-align: right;
+    color: #00000069;
+    width: 30%;
+    margin-top: 5%;
+
+}
+.titles, .dates {
+    display: inline-block; /* Makes the <p> tags appear on the same line */
+    margin: 0; /* Optional: Removes default margins */
+    padding: 0; /* Optional: Removes default padding */
+}
+
+#title_date{
+    text-align: right;
+    font-size: 100%;
+    margin-left: 5%;
+    color: #00000069;
+}
+
+#title_date,#title{
+    display: inline-block; 
+    margin: 0; 
+    padding: 0; 
+}
+
+#new_button{
+    border:none;
+    text-align: center;
+}
+
+h1,#new_button{
+    display: inline-block;
+}
+
+h2,#edit_button{
+    display: inline;
+}
+
+p{
+    font-size: 100%;
+    margin-left: 5%;
+    text-align: left;
+    color: #00000069;
+    margin-top: 5%;
+}

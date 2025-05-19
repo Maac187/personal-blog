@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href='{{url_for('static', filename="styles.css")}}'>
+</head>
+<body>
+     <div id="container">
+   <h1>personal blog</h1> 
+   <div class="div">
+    {%if not data %}
+    <h2 >no articles</h2>
+    {% else %}
+    {% for articles in data %}
+    <form action="{{url_for('article_generator')}}" method="POST">
+    <input type="hidden" name="id" value="{{articles.id}}">
+          <button type="submit"><p class="titles">{{articles.title}}</p><p class="dates">{{articles.date}}</p></button>
+           </form>
+          {% endfor %}
+    {% endif %}
+    </div>
+   </div>
+</body>
+</html>

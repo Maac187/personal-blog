@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='admin.css')}}">
+    <title>Edit Article</title>
+</head>
+<body>
+    <div id="container">
+        <h1 id="header">edit article</h1>
+        <form method="POST">
+            <h1>title</h1>
+            <input type="text" name="title" value="{{ article.title }}">
+            <h1>content</h1>
+            <textarea name="content" cols="20" rows="10">{{ article.content }}</textarea>
+            <button id="submit" type="submit">save</button>
+        </form>
+    </div>
+</body>
+</html>

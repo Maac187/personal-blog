@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <title>{{ data.title if data else "Article" }}</title>
+</head>
+<body>
+    <div id="container">
+        {% if data %}
+            <h1 id="title">{{ data.title }}</h1>
+            <span id="title_date">{{ data.date }}</span>
+            <div class="div">
+                <p>{{data.content}}</p>
+            </div>
+        {% else %}
+            <h2>Article not found</h2>
+        {% endif %}
+    </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{url_for('static', filename='admin.css')}}">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="container">
+        <h1 id="header">new article</h1>
+    <form action="{{url_for('new_article_post')}}" method="POST">
+          <h1>title</h1>
+          <input type="text" name="title">
+          <h1>content</h1>
+
+          <textarea name="content"  cols="30" rows="10"></textarea>
+          <button id="submit" type="submit">submit</button>
+     </form>
+     {% if error %}
+          <h2>{{error}}</h2>
+     {% endif %}
+     {% if success %}
+          <h2>{{success}}</h2>
+     {% endif %}
+     </div>
+</body>
+</html>

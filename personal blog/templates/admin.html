@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=h, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='admin.css')}}">
+</head>
+<body>
+     <div class="header"><h1 id="header">personal blog</h1> 
+  <button id="new_button" onclick="window.location.href='{{url_for("new_article")}}'"> + new </button></div>
+
+     <div id="container">
+
+    {%if not data %}
+    <h2 >no articles</h2>
+    {% else %}
+    {% for articles in data %}
+    <div class="article-block">
+        <h2 id="articles">{{articles.title}}</h2>
+        <form action="{{ url_for('edit_article', article_id=articles.id) }}" method="GET" style="display:inline;">
+            <button type="submit" id="edit_button">edit</button>
+        </form>
+        <form action="{{url_for('admin_delete')}}" method="POST" style="display:inline;">
+            <button type="submit" name="delete" value="{{articles.id}}" id="delete_button">delete</button>
+        </form>
+    </div>
+          {% endfor %}
+    {% endif %}
+    </div>
+   </div>
+</body>
+</html>
